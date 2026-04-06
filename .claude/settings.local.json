@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(node -e ':*)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('public/data/departements.json','utf8'\\)\\); console.log\\('type:', d.type\\); console.log\\('features:', d.features?.length\\); console.log\\('sample props:', JSON.stringify\\(d.features?.[0]?.properties\\)\\); console.log\\('sample geom type:', d.features?.[0]?.geometry?.type\\)\")",
+      "Bash(node -e \"const s=JSON.parse\\(require\\('fs'\\).readFileSync\\('public/data/communes_scores.json','utf8'\\)\\); const k=Object.keys\\(s\\)[0]; console.log\\('sample key:', k\\); console.log\\('sample val:', JSON.stringify\\(s[k]\\).slice\\(0,300\\)\\)\")",
+      "Bash(npm run:*)",
+      "Bash(curl:*)",
+      "Bash(python scripts/simplify_communes.py)",
+      "Bash(python -c ':*)",
+      "Bash(npx vite:*)",
+      "Bash(node -e \"const fs=require\\('fs'\\); const d=JSON.parse\\(fs.readFileSync\\('public/data/communes_scores.json','utf8'\\)\\); console.log\\('Type:', typeof d\\); console.log\\('Keys count:', Object.keys\\(d\\).length\\); const first=Object.entries\\(d\\)[0]; console.log\\('First entry:', JSON.stringify\\(first\\).slice\\(0,300\\)\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const d=JSON.parse\\(fs.readFileSync\\('public/data/communes_geo.json','utf8'\\)\\); console.log\\('Type:', d.type\\); console.log\\('Features count:', d.features?.length\\); const f=d.features?.[0]; console.log\\('First feature props:', JSON.stringify\\(f?.properties\\).slice\\(0,200\\)\\); console.log\\('First geometry type:', f?.geometry?.type\\); console.log\\('Coords sample length:', JSON.stringify\\(f?.geometry?.coordinates\\).length\\)\")",
+      "Bash(kill %1)",
+      "Bash(gh --version)",
+      "Bash(npx vercel:*)"
+    ]
+  }
+}
