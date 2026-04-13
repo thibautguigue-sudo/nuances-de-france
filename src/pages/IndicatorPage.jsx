@@ -4,6 +4,7 @@ import maplibregl from 'maplibre-gl'
 import { INDICATORS, SCORE_COLORS, scoreToColor, buildColorExpr } from '../constants'
 import { Histogram } from '../components/Charts'
 import { InsightVote } from '../components/InsightVote'
+import { MethodologySection } from '../components/MethodologySection'
 import DataWorker from '../dataWorker.js?worker'
 
 // Helper: send a fetch job to the worker and return a promise
@@ -275,6 +276,8 @@ export default function IndicatorPage() {
           </div>
         </div>
       </div>
+
+      <MethodologySection />
     </div>
   )
 }
