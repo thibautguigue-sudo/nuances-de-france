@@ -1,28 +1,28 @@
 /* ─── FONTS ─── */
 @font-face {
   font-family: 'Prima Sans';
-  src: url('/fonts/PrimaSans-Regular.otf') format('opentype');
+  src: url('/fonts/Prima Sans Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Prima Sans';
-  src: url('/fonts/PrimaSans-Bold.otf') format('opentype');
+  src: url('/fonts/Prima Sans Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Prima Sans';
-  src: url('/fonts/PrimaSans-Oblique.otf') format('opentype');
+  src: url('/fonts/Prima Sans Oblique.otf') format('opentype');
   font-weight: 400;
   font-style: oblique;
   font-display: swap;
 }
 @font-face {
   font-family: 'Prima Sans';
-  src: url('/fonts/PrimaSans-BoldOblique.otf') format('opentype');
+  src: url('/fonts/Prima Sans Bold Oblique.otf') format('opentype');
   font-weight: 700;
   font-style: oblique;
   font-display: swap;
