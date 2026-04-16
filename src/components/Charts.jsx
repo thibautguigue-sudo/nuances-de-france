@@ -70,9 +70,9 @@ export function BarChart({ communeScore, nationalAvg, deptAvg, color, width = 28
         const w = Math.max(0, bw * ((it.value ?? 0) / 10))
         return (
           <g key={i} transform={`translate(0,${y})`}>
-            <text x={pad - 6} y={h * 0.72} textAnchor="end" fontSize="11" fill="#6b6b65" fontFamily="DM Sans,sans-serif">{it.label}</text>
+            <text x={pad - 6} y={h * 0.72} textAnchor="end" fontSize="11" fill="#6b6b65" fontFamily="Prima Sans,DM Sans,sans-serif">{it.label}</text>
             <rect x={pad} y={0} width={w} height={h} rx={3} fill={it.fill} opacity={0.85} />
-            <text x={pad + w + 4} y={h * 0.72} fontSize="11" fill="#1a1a18" fontWeight="600" fontFamily="DM Sans,sans-serif">
+            <text x={pad + w + 4} y={h * 0.72} fontSize="11" fill="#1a1a18" fontWeight="600" fontFamily="Prima Sans,DM Sans,sans-serif">
               {it.value != null ? it.value.toFixed(1) : '—'}
             </text>
           </g>

@@ -1,11 +1,41 @@
+/* ─── FONTS ─── */
+@font-face {
+  font-family: 'Prima Sans';
+  src: url('/fonts/PrimaSans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Prima Sans';
+  src: url('/fonts/PrimaSans-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Prima Sans';
+  src: url('/fonts/PrimaSans-Oblique.otf') format('opentype');
+  font-weight: 400;
+  font-style: oblique;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Prima Sans';
+  src: url('/fonts/PrimaSans-BoldOblique.otf') format('opentype');
+  font-weight: 700;
+  font-style: oblique;
+  font-display: swap;
+}
+
 :root {
-  --bg: #FAFAF7;
+  --bg: #F0EDEA;
   --surface: #FFFFFF;
-  --text: #1A1A18;
+  --text: #2D2D2D;
   --text2: #6B6B65;
-  --border: #E8E7E2;
-  --accent: #0F6E56;
-  --accent-light: #E1F5EE;
+  --border: #D6D2CC;
+  --accent: #2D2D2D;
+  --accent-light: #E8E8E8;
   --violet: #534AB7;
   --violet-light: #EEEDFE;
 }
@@ -13,7 +43,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Prima Sans', 'DM Sans', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
@@ -28,7 +58,7 @@ body {
   left: 0;
   right: 0;
   height: 28px;
-  background: #1A1A18;
+  background: #2D2D2D;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -38,7 +68,7 @@ body {
   left: 0;
   top: 0;
   height: 100%;
-  background: linear-gradient(90deg, var(--accent), #2D8B5E);
+  background: linear-gradient(90deg, #555, #888);
   transition: width 0.6s ease;
 }
 .progress-text {
@@ -52,17 +82,11 @@ body {
 
 /* ─── HERO ─── */
 .hero {
-  background: linear-gradient(135deg, #0A2E1F 0%, #0F4E3A 40%, #1A6B52 100%);
+  background: #2D2D2D;
   color: white;
   padding: 48px 32px 36px;
   position: relative;
   overflow: hidden;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 70% 30%, rgba(83,74,183,.12) 0%, transparent 50%);
 }
 .hero-inner {
   position: relative;
@@ -126,10 +150,10 @@ body {
   font-weight: 500;
   color: var(--text2);
   transition: all .2s;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Prima Sans', 'DM Sans', sans-serif;
 }
-.ind-btn:hover { background: #f0f0ec; }
-.ind-btn.active { background: var(--accent); color: #fff; }
+.ind-btn:hover { background: var(--accent-light); }
+.ind-btn.active { background: #2D2D2D; color: #fff; }
 .ind-btn .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
 /* ─── MAP LAYOUT ─── */
@@ -235,8 +259,8 @@ body {
   font-size: .82rem;
   cursor: pointer;
 }
-.commune-row:hover { background: #f0f0ec; }
-.commune-row:nth-child(even) { background: #fafaf7; }
+.commune-row:hover { background: var(--accent-light); }
+.commune-row:nth-child(even) { background: var(--bg); }
 
 .back-btn {
   display: block;
@@ -244,15 +268,15 @@ body {
   margin-top: 16px;
   padding: 10px;
   border: none;
-  background: var(--accent);
+  background: #2D2D2D;
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
   font-size: .85rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Prima Sans', 'DM Sans', sans-serif;
   font-weight: 500;
 }
-.back-btn:hover { opacity: .9; }
+.back-btn:hover { opacity: .85; }
 
 /* Chart center */
 .chart-center { display: flex; justify-content: center; padding: 12px 0; }
@@ -279,7 +303,7 @@ body {
 
 /* ─── FOOTER ─── */
 .footer {
-  background: #1A1A18;
+  background: #2D2D2D;
   color: rgba(255,255,255,.6);
   padding: 32px;
   text-align: center;
@@ -299,7 +323,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 8px;
   font-size: .85rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Prima Sans', 'DM Sans', sans-serif;
   background: var(--bg);
 }
 .search-box input:focus {
@@ -417,7 +441,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-size: .82rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Prima Sans', 'DM Sans', sans-serif;
   font-weight: 500;
 }
 .share-btn:hover { background: var(--violet); color: #fff; }
@@ -446,7 +470,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-size: .78rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Prima Sans', 'DM Sans', sans-serif;
   transition: all .2s;
   display: flex;
   align-items: center;
@@ -517,7 +541,7 @@ body {
   font-size: 1rem;
   transition: all .2s;
 }
-.ind-pill:hover { background: #f0f0ec; }
+.ind-pill:hover { background: var(--accent-light); }
 .ind-pill.active { color: #fff; }
 
 .indicator-layout {

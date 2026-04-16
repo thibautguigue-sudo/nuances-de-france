@@ -243,7 +243,7 @@ export default function HomePage() {
       const curInd = currentIndRef.current
       const score = p[`${curInd}_s`]
       const classe = p[`${curInd}_c`]
-      let html = `<div style="font-family:DM Sans,sans-serif;font-size:13px">
+      let html = `<div style="font-family:'Prima Sans','DM Sans',sans-serif;font-size:13px">
         <strong>${name}</strong><br><span style="color:#888">${p.c}</span>`
       if (score != null) {
         html += `<br><span style="font-size:20px;font-weight:700;color:${scoreToColor(score)}">${score}</span>
@@ -412,8 +412,8 @@ export default function HomePage() {
       <div className="hero">
         <div className="hero-inner">
           <div>
-            <div className="badge">Observatoire national 2025</div>
-            <h1 className="serif">Nuances de France</h1>
+            <h1 className="serif"><strong>OSER.</strong></h1>
+            <h1 className="serif" style={{ fontWeight: 400, fontSize: 'clamp(1.3rem, 2.5vw, 2rem)', marginTop: 4 }}>Nuances de France</h1>
             <p className="sub">Opinion citoyenne x donnees publiques — 34 931 communes, 9 indicateurs, territoire par territoire.</p>
           </div>
           <div className="stats">
@@ -520,7 +520,7 @@ export default function HomePage() {
       </div>
 
       <div className="footer">
-        <p><strong>Nuances de France</strong> — Produit par <strong>PNYX 2.0</strong> pour <strong>OSER</strong></p>
+        <p>Produit par <strong>PNYX 2.0</strong> pour <strong>OSER.</strong></p>
         <p style={{ marginTop: 6, opacity: .5 }}>MVP — Données d'enquete simulees / Données open data reelles / 34 931 communes</p>
       </div>
     </>

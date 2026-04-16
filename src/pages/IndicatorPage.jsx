@@ -114,7 +114,7 @@ export default function IndicatorPage() {
         const curId = idRef.current
         const sc = p[`${curId}_s`]
         popup.setLngLat(e.lngLat).setHTML(
-          `<div style="font-family:DM Sans,sans-serif;font-size:13px">
+          `<div style="font-family:'Prima Sans','DM Sans',sans-serif;font-size:13px">
             <strong>${p.n || p.c}</strong>
             ${sc != null ? `<br><span style="font-size:18px;font-weight:700;color:${scoreToColor(sc)}">${sc}</span>/10` : ''}
           </div>`
