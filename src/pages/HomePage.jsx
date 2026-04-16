@@ -6,6 +6,7 @@ import { INDICATORS, SCORE_COLORS, scoreToColor, buildColorExpr } from '../const
 import { RadarChart, BarChart, GaugeChart } from '../components/Charts'
 import { ComparisonPanel } from '../components/ComparisonPanel'
 import { InsightVote } from '../components/InsightVote'
+import { MethodologySection } from '../components/MethodologySection'
 import DataWorker from '../dataWorker.js?worker'
 
 let pmtilesAdded = false
@@ -518,6 +519,8 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      <MethodologySection />
 
       <div className="footer">
         <p>Produit par <strong>PNYX 2.0</strong> pour <strong>OSER.</strong></p>
